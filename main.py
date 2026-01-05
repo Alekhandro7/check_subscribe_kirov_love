@@ -3,7 +3,7 @@ from telebot import types
 from telebot.types import KeyboardButton
 from background import keep_alive
 
-bot = telebot.TeleBot('8385124271:AAH-N_nO3KZdZywCmWqyeCfTT6WdLra07NI')
+bot = telebot.TeleBot('YOUR-TOKEN')
 
 channel_1='@love_kirov'
 channel_2='@l_lotus_s_life'
