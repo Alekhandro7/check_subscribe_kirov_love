@@ -1,6 +1,7 @@
 import telebot
 from telebot import types
 from telebot.types import KeyboardButton
+from background import keep_alive
 
 bot = telebot.TeleBot('8385124271:AAH-N_nO3KZdZywCmWqyeCfTT6WdLra07NI')
 
@@ -34,4 +35,5 @@ def check_channel(message):
         except Exception as e:
             bot.send_message(message.from_user.id, f'Произошла ошибка {e}')
 
+keep_alive()
 bot.polling(none_stop=True, interval=0)
